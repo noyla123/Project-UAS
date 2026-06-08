@@ -1,17 +1,16 @@
 <html>
 <head>
-   <title>Demo Text</title>
+   <title>Verifikasi Sertifikat SHA-256</title>
 </head>
 <body>
-   <h2>Demo Text</h2>
-   
-   <form action="/" method="post">
-      Nama depan:<br />
-      <input type="text" name="namaDepan" size="25" /><br />
-      Nama belakang:<br />
-      <input type="text" name="namaBelakang" size="25" />
-      <p><input type="submit"  value="Kirim" /></p>
+   <h2>Upload Sertifikat</h2>
+
+   <form method="POST" enctype="multipart/form-data">
+      <p>Pilih file sertifikat:</p>
+      <input type="file" name="sertifikat">
+      <br><br>
+      <input type="submit" value="Upload dan Generate Hash">
    </form>
-   
+
 </body>
 </html>
